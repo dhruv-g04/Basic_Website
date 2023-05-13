@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inter Collage Football tournament</title>
+    <style>
+        * {
+            color: rgb(51, 199, 160);
+            /* box-sizing: border-box; */
+        }
+
+        body {
+            /* box-sizing: border-box; */
+            /* padding: 0px; */
+            /* margin: 0px; */
+            /* background: url('FB BG.jpg'); */
+        }
+
+        /* .header {
+             position: absolute; 
+            left: 165px; 
+            background-color: black;
+            padding: 0px 0px;
+            margin: 25px -150px;
+            border-radius: 30px;
+            display: inline-block;
+
+        } */
+
+        .l {
+            display: inline-block;
+            font-size: 20px;
+            position: absolute;
+            left: 11px;
+            top: 25px;
+            /* padding: 10px; */
+            /* float: left; */
+            color: azure;
+        }
+
+        .m {
+            text-align: center;
+            display: block;
+            color: azure;
+            width: 600px;
+            background-color: grey;
+            padding: 5px 0px;
+            margin: 38px auto;
+            font-size: 20px;
+            border-left: 3px solid rgb(80, 110, 100);
+            border-right: 3px solid aquamarine;
+            border-top: 3px solid rgb(61, 157, 157);
+            border-bottom: 3px solid rgb(11, 104, 104);
+            border-radius: 25px;
+        }
+
+        .r {
+            font-size: 20px;
+            position: absolute;
+            right: 50px;
+            top: 40px;
+            /* padding: 10px; */
+            display: inline-block;
+            /* margin: -61px -39px; */
+            color: rgb(197, 230, 230);
+            float: right;
+        }
+
+        a {
+
+            text-decoration: none;
+            color: antiquewhite;
+        }
+
+        li {
+
+            display: inline;
+            margin: 23px 15px;
+        }
+
+        a:hover {
+
+            padding: 2px 10px;
+            color: gray;
+            background-color: aquamarine;
+            border-radius: 15px;
+        }
+
+        .l img {
+            margin: 0 12px;
+            width: 64px;
+            border-radius: 50%;
+        }
+
+        #webname {
+            font-size: 20px;
+            position: absolute;
+            /* top: 44px; */
+            /* left: 7px; */
+            display: inline;
+        }
+
+        /* .navbar {
+            width: 690px;
+            background-color: currentColor;
+            padding: 7px 0px;
+            margin: 0px 0px;
+            font-size: 20px;
+            border-left: 5px solid rgb(80, 110, 100);
+            border-right: 5px solid aquamarine;
+            border-top: 5px solid rgb(61, 157, 157);
+            border-bottom: 5px solid rgb(11, 104, 104);
+            border-radius: 25px;
+        } */
+
+        .form {
+            padding: 21px 20px;
+            margin: 59px 185px;
+            width: 500px;
+            border: 2px solid rgb(37, 62, 125);
+            /* background-color: rgb(197, 225, 228); */
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .btn {
+            background-color: rgb(48, 52, 71);
+            color: blanchedalmond;
+            font-size: 20px;
+            width: auto;
+            padding: 4px 5px;
+            border: 2px solid grey;
+            border-radius: 50px;
+            cursor: pointer;
+        }
+        #contact:hover{
+            background-color: rgb(29, 29, 41);
+            color: aquamarine;
+        }
+
+        .box input,select {
+            color: darkgrey;
+            text-align: center;
+            width: 400px;
+            font-size: 20px;
+            padding: 5px 5px;
+            margin: 2px auto;
+            border-radius: 15px;
+        }
+
+        header::before{
+            background: url('FB BG.jpg') no-repeat  ;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.7;
+        }
+        select{
+            color: grey;
+            width: 413px;
+        }
+        #submit{
+            width: 413px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="l">
+            <img src="FB logo.jpg" alt="Image not">
+            <h3 id="webname">Football</h3>
+        </div>
+
+        <div class="m">
+            <!-- <div class="navbar"> -->
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/rules">Rules</a></li>
+            <li><a href="/prizes">Prizes</a></li>
+            <!-- </div> -->
+        </div>
+        <div class="r">
+            <button class="btn">Contact Us</button>
+
+        </div>
+
+    </header>
+
+    <!-- form -->
+
+    <div class="form">
+        <h2> <strong>Registeration Form</strong> </h2>
+        <div class="box">
+            <form action="backend.php">
+                <div>
+                    <!-- <label for="name">Name:</label> -->
+
+                    <input type="text" name="name" id="name" placeholder="Captain's Name">
+                </div>
+                <div>
+                    <!-- <label for="clg">Collage Name:</label> -->
+
+                    <input type="text" name="clg" placeholder="Collage" id="clg">
+                </div>
+                <div>
+                    <!-- <label for="degree">Degree:</label> -->
+                    <select name="degree" id="degree">
+                        <option value="B-Tech" selected>B-Tech</option>
+                        <option value="M-Tech">M-Tech</option>
+                        <option value="PhD">PhD</option>
+                        <option value="MSc">MSc</option>
+                    </select>
+
+                </div>
+                <div>
+                    <!-- <label for="phno">Phone No.:</label> -->
+
+                    <input type="number" name="phno" placeholder="Phone No." id="phno">
+                </div>
+                <div>
+                    <!-- <label for="email">Email:</label> -->
+
+                    <input type="email" name="email" placeholder="Email" id="email">
+                </div>
+                <div >
+
+                    <input class="btn" type="submit" name="submit" id="submit">
+                </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
